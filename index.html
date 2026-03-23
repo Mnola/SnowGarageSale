@@ -3,36 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Mi Tienda</title>
-  <style>
-    body { font-family: Arial; padding: 20px; }
-    .producto { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
-    .sin-stock { color: red; font-weight: bold; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 
-<h1>🛍️ Mi Tienda</h1>
-
-<div class="producto">
-  <h2>Zapatillas Nike</h2>
-  <p>Precio base: $50.000</p>
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/549XXXXXXXXX?text=Hola!%20Quiero%20ofertar%20por%20las%20zapatillas">
-    📱 Ofertar por WhatsApp
-  </a>
-
-  <br><br>
-
-  <!-- Formulario -->
-  <form action="https://formspree.io/f/TU_ID" method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre" required><br><br>
-    <input type="number" name="oferta" placeholder="Tu oferta" required><br><br>
-    <button type="submit">Enviar oferta</button>
-  </form>
-
-  <p class="stock">Disponible</p>
-</div>
+  <div class="overlay">
+    <h1>Mi Tienda</h1>
+    <p>Bienvenido</p>
+    <a href="tienda.html" class="btn">Entrar</a>
+  </div>
 
 </body>
 </html>
