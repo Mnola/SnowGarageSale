@@ -1,0 +1,68 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+}
+
+/* HOME */
+.home {
+  background: url('fondo.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* PRODUCTOS */
+.producto {
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+}
+
+/* CARRUSEL */
+.carousel {
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+
+.carousel button:first-of-type {
+  left: 0;
+}
+
+.carousel button:last-of-type {
+  right: 0;
+}
