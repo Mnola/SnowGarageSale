@@ -88,6 +88,16 @@ body {
   margin-top: 20px;
 }
 
+.btnhome {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: rgb(169, 210, 223);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 .btn {
   display: inline-block;
   margin-top: 15px;
