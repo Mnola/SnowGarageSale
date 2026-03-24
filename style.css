@@ -186,6 +186,13 @@ body {
     text-align: left;
   }
 
+  .btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* 🔥 evita que se desborde */
+    text-align: center;
+  }
+  
   .titulo {
     font-size: 32px;
   }
