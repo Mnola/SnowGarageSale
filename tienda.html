@@ -5,6 +5,7 @@
   <title>Items</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <h1 class="titulo">m&m's garage sale</h1>
@@ -12,30 +13,46 @@
 <div class="grid">
 
   <div class="producto">
-    <h2>Botas de Ski Nordica</h2>
 
-    <div class="carousel">
-      <img src="./images/botasNordica1.jpeg" class="active">
-      <img src="./images/botasNordica2.jpeg">
-      <img src="./images/botasNordica3.jpeg">
-      <img src="./images/botasNordica4.jpeg">
-      <img src="./images/botasNordica5.jpeg">
-      <img src="./images/botasNordica6.jpeg">
-      <img src="./images/botasNordica7.jpeg">
-      <img src="./images/botasNordica8.jpeg">
-      <img src="./images/botasNordica9.jpeg">
-      <img src="./images/botasNordica10.jpeg">
+    <div class="galeria">
 
-      <button onclick="prev(this)">◀</button>
-      <button onclick="next(this)">▶</button>
+      <div class="carousel">
+        <img src="./images/botasNordica1.jpeg" class="active" onclick="openModal(this)">
+        <img src="./images/botasNordica2.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica3.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica4.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica5.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica6.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica7.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica8.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica9.jpeg" onclick="openModal(this)">
+        <img src="./images/botasNordica10.jpeg" onclick="openModal(this)">
+
+        <button onclick="prev(this)">◀</button>
+        <button onclick="next(this)">▶</button>
+      </div>
+
     </div>
 
-    <p class="precio">$80.000</p>
+    <div class="info">
+      <h2>Botas de Ski Nordica</h2>
 
-    <a class="btn" href="https://wa.me/549XXXXXXXXX">WhatsApp</a>
+      <p class="descripcion">
+        Botas de ski en excelente estado. Ideales para montaña, cómodas y resistentes.
+      </p>
+
+      <p class="precio">$80.000</p>
+
+      <a class="btn" href="https://wa.me/549XXXXXXXXX">WhatsApp</a>
+    </div>
 
   </div>
 
+</div>
+
+<!-- Modal imagen grande -->
+<div id="modal" onclick="closeModal()">
+  <img id="modalImg">
 </div>
 
 <script>
@@ -51,6 +68,16 @@ function prev(btn){
   let index = [...imgs].findIndex(img => img.classList.contains("active"));
   imgs[index].classList.remove("active");
   imgs[(index-1+imgs.length)%imgs.length].classList.add("active");
+}
+
+// Lightbox
+function openModal(img){
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal(){
+  document.getElementById("modal").style.display = "none";
 }
 </script>
 
