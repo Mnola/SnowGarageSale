@@ -41,7 +41,22 @@
 
       <p class="precio">$80.000</p>
 
-      <a class="btn" href="https://wa.me/549XXXXXXXXX">WhatsApp</a>
+      <script>
+      const numero = "5491160557701";
+
+      document.querySelectorAll(".whatsapp-btn").forEach(btn => {
+        btn.addEventListener("click", function(e){
+          e.preventDefault();
+
+          const producto = this.dataset.product;
+
+          const mensaje = `Hola, quiero consultar por: ${producto}`;
+          const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+          window.open(url, "_blank");
+        });
+      });
+      </script>
     </div>
 
   </div>
