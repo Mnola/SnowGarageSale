@@ -14,23 +14,21 @@
 
   <div class="producto">
 
-    <div class="galeria">
+    <div class="carousel">
 
-      <div class="carousel">
-        <img src="./images/botasNordica10.jpeg" class="active" onclick="openModal(this)">
-        <img src="./images/botasNordica2.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica3.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica4.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica5.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica6.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica7.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica8.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica9.jpeg" onclick="openModal(this)">
-        <img src="./images/botasNordica1.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica10.jpeg" class="active" onclick="openModal(this)">
+      <img src="./images/botasNordica2.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica3.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica4.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica5.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica6.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica7.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica8.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica9.jpeg" onclick="openModal(this)">
+      <img src="./images/botasNordica1.jpeg" onclick="openModal(this)">
 
-        <button onclick="prev(this)">◀</button>
-        <button onclick="next(this)">▶</button>
-      </div>
+      <button onclick="prev(this)">◀</button>
+      <button onclick="next(this)">▶</button>
 
     </div>
 
@@ -50,12 +48,17 @@
 
 </div>
 
-<!-- Modal imagen grande -->
-<div id="modal" onclick="closeModal()">
-  <img id="modalImg">
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox(event)">
+  <button class="lb-btn left" onclick="prevLightbox(event)">◀</button>
+  <img id="lightboxImg">
+  <button class="lb-btn right" onclick="nextLightbox(event)">▶</button>
 </div>
 
 <script>
+let currentImages = [];
+let currentIndex = 0;
+
 function next(btn){
   let imgs = btn.parentElement.querySelectorAll("img");
   let index = [...imgs].findIndex(img => img.classList.contains("active"));
@@ -70,14 +73,38 @@ function prev(btn){
   imgs[(index-1+imgs.length)%imgs.length].classList.add("active");
 }
 
-// Lightbox
+// OPEN LIGHTBOX CON CARRUSEL
 function openModal(img){
-  document.getElementById("modal").style.display = "flex";
-  document.getElementById("modalImg").src = img.src;
+
+  const carousel = img.closest(".carousel");
+  const imgs = carousel.querySelectorAll("img");
+
+  currentImages = [...imgs].map(i => i.src);
+  currentIndex = [...imgs].findIndex(i => i.src === img.src);
+
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightboxImg").src = currentImages[currentIndex];
 }
 
-function closeModal(){
-  document.getElementById("modal").style.display = "none";
+// NEXT LIGHTBOX
+function nextLightbox(e){
+  e.stopPropagation();
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  document.getElementById("lightboxImg").src = currentImages[currentIndex];
+}
+
+// PREV LIGHTBOX
+function prevLightbox(e){
+  e.stopPropagation();
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  document.getElementById("lightboxImg").src = currentImages[currentIndex];
+}
+
+// CLOSE LIGHTBOX
+function closeLightbox(e){
+  if (e.target.id === "lightbox") {
+    document.getElementById("lightbox").style.display = "none";
+  }
 }
 </script>
 
