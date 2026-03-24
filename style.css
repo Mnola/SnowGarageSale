@@ -172,6 +172,7 @@ body {
   .producto {
     flex-direction: column; /* 🔥 apila */
     align-items: center;
+    box-sizing: border-box;
   }
 
   .carousel {
@@ -184,6 +185,7 @@ body {
   .info {
     width: 100%;
     text-align: left;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -191,6 +193,7 @@ body {
     width: 100%;
     box-sizing: border-box; /* 🔥 evita que se desborde */
     text-align: center;
+    margin: 10px 0;
   }
 
   .titulo {
