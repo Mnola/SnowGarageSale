@@ -176,12 +176,14 @@ body {
 
   .carousel {
     width: 100%;
-    max-width: 100%;
+    max-width: 350px;
     height: auto;
+    margin-bottom: 15px;
   }
 
   .info {
     width: 100%;
+    text-align: left;
   }
 
   .titulo {
