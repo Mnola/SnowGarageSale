@@ -144,3 +144,16 @@ body {
 .lb-btn.left { left: 20px; }
 .lb-btn.right { right: 20px; }
 
+/* HOME*/
+.home {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("./images/fondo.jpg"); /* tu fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
