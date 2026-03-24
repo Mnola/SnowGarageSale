@@ -28,21 +28,29 @@ body {
 }
 
 /* CARRUSEL */
+/* CONTENEDOR FIJO */
 .carousel {
   position: relative;
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 1 / 1;
+  height: 400px; /* 🔥 CLAVE: altura fija */
   overflow: hidden;
+  flex-shrink: 0;
 }
 
+/* TODAS LAS IMÁGENES IGUALES */
 .carousel img {
+  position: absolute; /* 🔥 evita que cambie el tamaño */
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 recorte prolijo */
   display: none;
   border-radius: 8px;
-  cursor: pointer;
 }
 
+/* SOLO LA ACTIVA SE VE */
 .carousel img.active {
   display: block;
 }
