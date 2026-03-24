@@ -30,7 +30,10 @@ body {
 /* CARRUSEL */
 .carousel {
   position: relative;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
 .carousel img {
@@ -122,3 +125,4 @@ body {
 
 .lb-btn.left { left: 20px; }
 .lb-btn.right { right: 20px; }
+
