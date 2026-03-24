@@ -157,3 +157,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* lema*/
+.lema {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
