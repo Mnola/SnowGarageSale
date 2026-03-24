@@ -11,9 +11,12 @@ body {
 
 .titulo {
   text-align: center;
-  padding: 20px;
+  font-size: 48px;   /* 🔥 más grande */
+  font-weight: bold;
+  color: white;      /* o gray */
+  margin: 20px 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* mejora visibilidad */
 }
-
 /* LAYOUT TIENDA */
 .grid {
   display: block;
@@ -92,7 +95,7 @@ body {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 15px;
-  background: rgb(169, 210, 223);
+  background: rgb(169, 221, 223);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -141,10 +144,3 @@ body {
 .lb-btn.left { left: 20px; }
 .lb-btn.right { right: 20px; }
 
-/* banner */
-.banner {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  display: block;
-}
