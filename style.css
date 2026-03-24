@@ -11,9 +11,9 @@ body {
 
 .titulo {
   text-align: center;
-  font-size: 48px;   /* 🔥 más grande */
+  font-size: 60px;   /* 🔥 más grande */
   font-weight: bold;
-  color: white;      /* o gray */
+  color: rgb(255, 255, 255);      /* o gray */
   margin: 20px 0;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* mejora visibilidad */
 }
@@ -33,6 +33,7 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.85); /* 🔥 transparencia */
 }
 
 /* CARRUSEL */
