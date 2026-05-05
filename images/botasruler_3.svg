@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="956.76801"
-   height="856.76801"
-   viewBox="0 0 956.76801 856.76801"
+   width="956.7677"
+   height="956.67798"
+   viewBox="0 0 956.7677 956.67798"
    sodipodi:docname="botasruler_3.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -22,11 +22,11 @@
       <rect
          style="fill:#000000"
          id="rect2"
-         width="956.76801"
-         height="856.76801"
-         x="0"
-         y="219.79797"
-         ry="2.5858586" />
+         width="956.7677"
+         height="956.67798"
+         x="3.2322998"
+         y="124.12122"
+         ry="1.2929293" />
     </clipPath>
   </defs>
   <sodipodi:namedview
@@ -39,8 +39,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.38671875"
-     inkscape:cx="479.67677"
-     inkscape:cy="420.20202"
+     inkscape:cx="478.38384"
+     inkscape:cy="515.87879"
      inkscape:window-width="1366"
      inkscape:window-height="697"
      inkscape:window-x="-8"
@@ -51,7 +51,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Image"
      id="g1"
-     transform="translate(0,-219.79797)">
+     transform="translate(-3.2322998,-124.12122)">
     <image
        width="960"
        height="1280"
