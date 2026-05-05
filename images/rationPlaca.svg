@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="1287.7577"
-   height="1086.798"
-   viewBox="0 0 1287.7577 1086.798"
+   width="1096.4041"
+   height="1000.7273"
+   viewBox="0 0 1096.4041 1000.7273"
    sodipodi:docname="rationPlaca.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -85,6 +85,30 @@
          r="460.60599"
          transform="rotate(-90)" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#bb2d2d;stroke-width:8.8;stroke-dasharray:none;stroke-opacity:1"
+         id="rect10"
+         width="1122.2626"
+         height="1016.2424"
+         x="-2.3434227"
+         y="87.595993"
+         ry="1.2929293" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#bb2d2d;stroke-width:8.8;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12"
+         width="1096.4041"
+         height="1000.7273"
+         x="23.515167"
+         y="100.52529"
+         ry="1.2929293" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="namedview1"
@@ -95,9 +119,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.38671875"
-     inkscape:cx="571.47475"
-     inkscape:cy="645.17172"
+     inkscape:zoom="0.27345145"
+     inkscape:cx="555.85735"
+     inkscape:cy="338.26846"
      inkscape:window-width="1366"
      inkscape:window-height="697"
      inkscape:window-x="-8"
@@ -108,9 +132,10 @@
      inkscape:groupmode="layer"
      inkscape:label="Image"
      id="g1"
-     transform="translate(90.262612,-15.191956)">
+     transform="translate(-23.515167,-100.52529)">
     <g
-       id="g9">
+       id="g9"
+       clip-path="url(#clipPath11)">
       <image
          width="962.42426"
          height="1283.2323"
