@@ -196,13 +196,19 @@ body {
     margin: 10px 0;
   }
 
-  .titulo {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 15px auto;
-    font-size: 32px;
-  }
+.titulo {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 32px;
+}
+
+.logo {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
 
   .precio {
     font-size: 20px;
